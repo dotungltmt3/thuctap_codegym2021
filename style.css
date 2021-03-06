@@ -920,25 +920,3 @@ td{
 }
 
 
-#wapper_f{
-	max-width: 300px;
-}
-.accordion_f-header{
-	background: #E1DCDC;
-	padding: 20px 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 10px;
-	cursor: pointer;
-}
-.accordion_f-item.active .accordion_f-header{
-	color: #7B0002;
-}
-.accordion_f-item.active .arrow{
-	transform: rotate(180deg);
-}
-.accordion_f-body{
-	padding: 20px 20px;
-	display: none;
-}
