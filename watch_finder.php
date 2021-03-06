@@ -7,9 +7,52 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     
     <link type="text/css" rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
+		
+		#wapper_f{
+			max-width: 300px;
+		}
+		.accordion_f-header{
+			padding: 10px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: #fff;
+			cursor: pointer;
+			border-top: 1px solid #B1B1B1;
+		}
+		.accordion_f-header h3{
+			font-size: 15px;
+			font-weight: 500;
+		}
+		.accordion_f-item.active .accordion_f-header{
+			color: #7B0002;
+		}
+		.accordion_f-item.active .arrow{
+			transform: rotate(180deg);
+		}
+		.accordion_f-body{
+			padding: 0px 20px;
+			display: none;
+		}
+		.accordion_f-body ul li{
+			padding: 10px 20px;
+		}
+		.accordion_f-body ul li:hover a{
+			color: #7B0002;
+		}
     </style>
+	<script>
+		$(document).ready(function(){
+			$('.accordion_f-item.active .accordion_f-body').slideDown();
+			$('.accordion_f-header').click(function(){
+				$(this).parent().toggleClass('active');
+				$(this).parent().children('.accordion_f-body').slideToggle();
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -329,29 +372,142 @@
 					<div class="accordion_f">
 						<div class="accordion_f-item active">
 							<div class="accordion_f-header">
-								<h3>Tiêu đề 1</h3>
+								<h3>COLLECTION</h3>
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div class="accordion_f-body">
-								bjksbcl kv; dsk;vd;sv;dk vksd ;
+								<ul>
+									<li><a href="#">Seamaster</a></li>
+									<li><a href="#">Speedmaster</a></li>
+									<li><a href="#">Constellation</a></li>
+									<li><a href="#">De Ville</a></li>
+									<li><a href="#">Specialities</a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="accordion_f-item">
 							<div class="accordion_f-header">
-								<h3>Tiêu đề 2</h3>
+								<h3>SUBCOLLECTION</h3>
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div class="accordion_f-body">
-								bjksbcl kv; dsk;vd;sv;dk vksd ;
+								<ul>
+									<li><a href="#">Dark Side of the Moon</a></li>
+									<li><a href="#">Anniversary Series</a></li>
+									<li><a href="#">City Editions</a></li>
+									<li><a href="#">Moonwatch Professional</a></li>
+									<li><a href="#">Moonphase</a></li>
+									<li><a href="#">Two Counters</a></li>
+									<li><a href="#">Olympic Official Timekeeper</a></li>
+									<li><a href="#">Calibre 321</a></li>
+									<li><a href="#">Seamaster 1948</a></li>
+									<li><a href="#">Aqua Terra 150M</a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="accordion_f-item">
 							<div class="accordion_f-header">
-								<h3>Tiêu đề 3</h3>
+								<h3>CASE</h3>
 								<i class="fas fa-angle-down"></i>
 							</div>
 							<div class="accordion_f-body">
-								bjksbcl kv; dsk;vd;sv;dk vksd ;
+								<ul>
+									<li><a href="#">Steel</a></li>
+									<li><a href="#">Steel ‑ Gold</a></li>
+									<li><a href="#">Gold</a></li>
+									<li><a href="#">Ceramic</a></li>
+									<li><a href="#">Titanium</a></li>
+									<li><a href="#">Platinum</a></li>
+									<li><a href="#">Tantalum</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>BRACELET</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								<ul>
+									<li><a href="#">Steel</a></li>
+									<li><a href="#">Steel ‑ Gold</a></li>
+									<li><a href="#">Gold</a></li>
+									<li><a href="#">NATO Strap</a></li>
+									<li><a href="#">Leather</a></li>
+									<li><a href="#">Nylon</a></li>
+									<li><a href="#">Rubber</a></li>
+									<li><a href="#">Titanium</a></li>
+									<li><a href="#">Platinum</a></li>
+									<li><a href="#">Tantalum</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>CASE DIAMETER</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								<ul>
+									<li><a href="#">< 30 mm</a></li>
+									<li><a href="#">30 to < 35 mm</a></li>
+									<li><a href="#">35 to < 38 mm</a></li>
+									<li><a href="#">38 to < 40 mm</a></li>
+									<li><a href="#">40 to < 42 mm</a></li>
+									<li><a href="#">≥ 42 mm</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>FEATURES</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								<ul>
+									<li><a href="#">Chronograph</a></li>
+									<li><a href="#">Chronometer</a></li>
+									<li><a href="#">Master Chronometer Certified</a></li>
+									<li><a href="#">Transparent case back</a></li>
+									<li><a href="#">24 hours GMT</a></li>
+									<li><a href="#">Annual calendar</a></li>
+									<li><a href="#">Anti‑magnetic</a></li>
+									<li><a href="#">Date</a></li>
+									<li><a href="#">Day‑Date</a></li>
+									<li><a href="#">Diamonds</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>MOVEMENT TYPE</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								<ul>
+									<li><a href="#">Manual‑winding</a></li>
+									<li><a href="#">Self winding</a></li>
+									<li><a href="#">Quartz</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordion_f-item">
+							<div class="accordion_f-header">
+								<h3>WATER RESISTANCE</h3>
+								<i class="fas fa-angle-down"></i>
+							</div>
+							<div class="accordion_f-body">
+								<ul>
+									<li><a href="#">0 bar (0 metres / 0 feet)</a></li>
+									<li><a href="#">3 bar (30 metres / 100 feet)</a></li>
+									<li><a href="#">5 bar (50 metres / 167 feet)</a></li>
+									<li><a href="#">6 bar (60 metres / 200 feet)</a></li>
+									<li><a href="#">10 bar (100 metres / 330 feet)</a></li>
+									<li><a href="#">15 bar (150 metres / 500 feet)</a></li>
+									<li><a href="#">30 bar (300 metres / 1000 feet)</a></li>
+									<li><a href="#">60 bar (600 metres / 2000 feet)</a></li>
+									<li><a href="#">120 bar (1200 metres / 4000 feet)</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -464,12 +620,9 @@
 		</div>
 
 
-
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="style.js"></script>
-	<link type="text/css" rel="stylesheet" href="style.css">
 
 	
 </body>
