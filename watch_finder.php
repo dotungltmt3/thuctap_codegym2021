@@ -12,7 +12,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Overlock:ital@1&display=swap');
 		
 		#wapper_f{
-			max-width: 300px;
+			max-width: 230px;
 		}
 		.accordion_f-header{
 			padding: 10px 20px;
@@ -38,7 +38,7 @@
 			display: none;
 		}
 		.accordion_f-body ul li{
-			padding: 10px 20px;
+			padding: 10px 0px;
 		}
 		.accordion_f-body ul li:hover a{
 			color: #7B0002;
@@ -627,3 +627,4 @@
 	
 </body>
 </html>
+
